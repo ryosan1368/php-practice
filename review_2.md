@@ -74,7 +74,6 @@ class User
 
 $sasaki = new User('佐々木', 20);
 $sasaki->userInfo();
-
 ```
 上記のコードでは$sasaki = new User('佐々木', 20); と書いてインスタンス化した際に、コンストラクタは自動的に実行されます。そして、コンストラクタは引数として受け取った$name（'佐々木'）と$age（20）をプロパティの$userNameと$userAgeへそれぞれ設定します。
 
