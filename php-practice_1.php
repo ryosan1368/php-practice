@@ -114,5 +114,4 @@ function evaluateGrade($evaluate) {
 evaluateGrade('C');
 evaluateGrade('q');
 
-
 ?>
