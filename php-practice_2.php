@@ -73,13 +73,13 @@ $yamada->attend('PHP');
 
 // Q5 定義済みクラス
 ##問題1
-$time = new DateTime();
-$time->setTimezone(new DateTImeZone('Asia/Tokyo'));
-echo $time->modify('-1 months')->format('Y-m-d');
+$now = new DateTime();
+$now->setTimezone(new DateTImeZone('Asia/Tokyo'));
+echo $now->modify('-1 months')->format('Y-m-d');
 
 ##問題2
-$time2 = new DateTime('1992-04-25');
-$interval = $time->diff($time2);
-echo 'あの日から' . $interval->days . '日経過しました。';
+$past = new DateTime('1992-04-25');
+$diff = $now->diff($past);
+echo 'あの日から' . $diff->format('%a') . '日経過しました。';
 
 ?>
