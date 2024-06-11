@@ -66,11 +66,11 @@ foreach ($array as $pref => $city) {
 // Q10 関数-1
 function hello($name)
 {
-  echo $name . "さん、こんにちは。\n";
+  return $name . "さん、こんにちは。\n";
 }
 
-hello('山田');
-hello('佐藤');
+echo hello('山田');
+echo hello('佐藤');
 
 // Q11 関数-2
 function calcTaxInPrice($price) {
@@ -98,23 +98,19 @@ function evaluateGrade($evaluate) {
   switch ($evaluate) {
     case 'A':
     case 'B':
-      echo '合格です。';
-      break;
+      return '合格です。';
 
     case 'C':
-      echo '合格ですが追加課題があります。';
-      break;
+      return '合格ですが追加課題があります。';
 
     case 'D':
-      echo '不合格です。';
-      break;
+      return '不合格です。';
 
     default:
-      echo '判定不明です。講師に問い合わせてください。';
-      break;
+      return '判定不明です。講師に問い合わせてください。';
   }
 }
-evaluateGrade('C');
-evaluateGrade('q');
+echo evaluateGrade('C');
+echo evaluateGrade('q');
 
 ?>
