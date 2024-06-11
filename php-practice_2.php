@@ -79,7 +79,6 @@ echo $now->modify('-1 months')->format('Y-m-d');
 
 ##問題2
 $past = new DateTime('1992-04-25');
-$diff = $now->diff($past);
-echo 'あの日から' . $diff->format('%a') . '日経過しました。';
+echo 'あの日から' . $now->diff($past)->format('%a') . '日経過しました。';
 
 ?>
